@@ -3,6 +3,9 @@
 A fun interactive demo created for colleagues in the Data & Analytics (DNA) department at adesso SE. As new colleagues, we were invited to submit a creative video presentation with a max length of 40 seconds introducing ourselves. Being an AI engineer, I added some AI elements to my video presentation and built this web interface to make it interactive.
 
 ## Demo
+<div align="center">
+  <img src="Screenshot.png" alt="Screenshot" />  
+</div>
 
 ✨ **Live Demo**: [https://yauheniya-adesso.github.io/digital-twin](https://yauheniya-adesso.github.io/digital-twin)
 
