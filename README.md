@@ -11,7 +11,7 @@ A fun interactive demo created for colleagues in the Data & Analytics (DNA) depa
 This project demonstrates several AI techniques working together:
 
 ### 1. Portrait Matting
-<div style="text-align: center;">
+<div align="center">
   <img src="digital_twin_portrait_matting.png" alt="Portrait Matting Process" />  
   <br><strong>Figure 1: Background removal using rmbg-2.0 model</strong>
 </div>
@@ -19,7 +19,7 @@ This project demonstrates several AI techniques working together:
 <br>Used the pretrained **rmbg-2.0 model** from Hugging Face to remove the background and extract the body outline. This creates the moving avatar for the digital twin. Before finding this model, I experimented with several other portrait matting solutions including MODNet and rembg, but none of them preserved fine details like hair strands or achieved the high-quality edge definition needed for a professional result. 
 
 ### 2. Wireframe Face Animation
-<div style="text-align: center;">
+<div align="center">
   <img src="digital_twin_face_wireframe.png" alt="Face Wireframe Animation" />  
   <br><strong>Figure 2: Real-time face tracking using MediaPipe </strong>
 </div>
@@ -27,7 +27,7 @@ This project demonstrates several AI techniques working together:
 <br>Implemented face tracking using **OpenCV and MediaPipe** to make the digital twin follow lip and face movements when talking, creating a more lifelike interaction. This was achieved by processing a pre-recorded video, which makes the implementation straightforward and efficient. MediaPipe detects facial landmarks (478 key points on the face) in real-time, while OpenCV handles video frame processing and rendering, allowing the wireframe to accurately track facial expressions and mouth movements frame by frame.
 
 ### 3. Agentic AI System
-<div style="text-align: center;">
+<div align="center">
   <img src="langgraph_visualization.png" alt="LangGraph Workflow" />  
   <br><strong>Figure 3: Multi-agent RAG system with intelligent routing</strong>
 </div>
@@ -41,7 +41,7 @@ This project demonstrates several AI techniques working together:
 See the [backend repository](https://github.com/yauheniya-adesso/digital-twin-backend) for technical details.
 
 ### 4. Text-to-Speech (TTS)
-<div style="text-align: center;">
+<div align="center">
   <img src="digital_twin_audio_output.png" alt="Text-to-Speech" />  
   <br><strong>Figure 4: Voice synthesis using Coqui TTS</strong>
 </div>
