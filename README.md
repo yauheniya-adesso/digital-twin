@@ -1,6 +1,6 @@
 # Digital Twin Frontend
 
-A fun interactive demo created for colleagues in the Data & Analytics (DNA) department at adesso. As new colleagues, we were invited to submit a creative video presentation with a max length of 40 seconds introducing ourselves. Being an AI engineer, I added some AI elements to my video presentation and built this web interface to make it interactive.
+A fun interactive demo created for colleagues in the Data & Analytics (DNA) department at adesso SE. As new colleagues, we were invited to submit a creative video presentation with a max length of 40 seconds introducing ourselves. Being an AI engineer, I added some AI elements to my video presentation and built this web interface to make it interactive.
 
 ## Demo
 
@@ -13,48 +13,48 @@ This project demonstrates several AI techniques working together:
 ### 1. Portrait Matting
 <div align="center">
   <figure>
-    <img src="docs/portrait-matting.png" alt="Portrait Matting Process" />
+    <img src="digital_twin_portrait_matting.png" alt="Portrait Matting Process" />  
     <figcaption>Figure 1: Background removal using rmbg-2.0 model</figcaption>
   </figure>
 </div>
 
-Used the pretrained **rmbg-2.0 model** from Hugging Face to remove the background and extract the body outline. This creates the moving avatar for the digital twin.
+Used the pretrained **rmbg-2.0 model** from Hugging Face to remove the background and extract the body outline. This creates the moving avatar for the digital twin. Before finding this model, I experimented with several other portrait matting solutions including MODNet and rembg, but none of them preserved fine details like hair strands or achieved the high-quality edge definition needed for a professional result. 
 
 ### 2. Wireframe Face Animation
 <div align="center">
   <figure>
-    <img src="docs/face-wireframe.png" alt="Face Wireframe Animation" />
+    <img src="digital_twin_face_wireframe.png" alt="Face Wireframe Animation" />  
     <figcaption>Figure 2: Real-time face tracking using MediaPipe</figcaption>
   </figure>
 </div>
 
-Implemented face tracking using **OpenCV and MediaPipe** to make the digital twin follow lip and face movements when talking, creating a more lifelike interaction.
+Implemented face tracking using **OpenCV and MediaPipe** to make the digital twin follow lip and face movements when talking, creating a more lifelike interaction. This was achieved by processing a pre-recorded video, which makes the implementation straightforward and efficient. MediaPipe detects facial landmarks (478 key points on the face) in real-time, while OpenCV handles video frame processing and rendering, allowing the wireframe to accurately track facial expressions and mouth movements frame by frame.
 
-### 3. Text-to-Speech (TTS)
+### 3. Agentic AI System
 <div align="center">
   <figure>
-    <img src="docs/tts-demo.png" alt="Text-to-Speech" />
-    <figcaption>Figure 3: Voice synthesis using Coqui TTS</figcaption>
-  </figure>
-</div>
-
-Integrated a pretrained **Coqui TTS model** from Hugging Face to give voice to the digital twin, enabling natural spoken responses.
-
-### 4. Agentic AI System
-<div align="center">
-  <figure>
-    <img src="langgraph_visualization.png" alt="LangGraph Workflow" />
-    <figcaption>Figure 4: Multi-agent RAG system with intelligent routing</figcaption>
+    <img src="langgraph_visualization.png" alt="LangGraph Workflow" />  
+    <figcaption>Figure 3: Multi-agent RAG system with intelligent routing</figcaption>
   </figure>
 </div>
 
 Built a multi-agent AI system using **LangGraph** that:
 - Intelligently routes questions to appropriate data sources (LinkedIn, GitHub, Medium)
-- Uses RAG (Retrieval-Augmented Generation) with vector search for accurate responses
-- Optimizes answers for natural text-to-speech output
+- Uses Retrieval-Augmented Generation (RAG) with vector search for accurate responses
 - Handles multi-language queries with automatic translation to English
+- Optimizes answers for natural text-to-speech output
 
 See the [backend repository](https://github.com/yauheniya-adesso/digital-twin-backend) for technical details.
+
+### 4. Text-to-Speech (TTS)
+<div align="center">
+  <figure>
+    <img src="digital_twin_audio_output.png" alt="Text-to-Speech" />  
+    <figcaption>Figure 4: Voice synthesis using Coqui TTS</figcaption>
+  </figure>
+</div>
+
+Integrated a pretrained **Coqui TTS model** from Hugging Face to give voice to the digital twin, enabling natural spoken responses. The digital twin was originally designed to provide audio output, and the local model successfully generates voice responses. However, due to deployment constraints on platforms like Render and Hugging Face Spaces, the current live demo returns text-only responses. The full audio functionality remains available when running the backend locally.
 
 ## Features
 
@@ -88,7 +88,7 @@ The system integrates with LangSmith for complete observability:
 
 **Deployment:**
 - <img src="https://api.iconify.design/mdi:github.svg" alt="GitHub" width="12" height="12" /> GitHub Pages (frontend)
-- <img src="https://api.iconify.design/simple-icons:huggingface.svg?color=%23FFD21E" alt="Hugging Face" width="12" height="12" /> Hugging Face Spaces (backend)
+- <img src="hf-icon.svg" alt="Hugging Face" width="12" height="12" /> Hugging Face Spaces (backend)
 
 ## Future Enhancements
 
@@ -105,7 +105,9 @@ The system integrates with LangSmith for complete observability:
 
 ## Acknowledgements
 
-**Animated DNA Background** - Custom CSS animation representing the DNA department DNA Strand 🧬 from Konstantin Denerz @[CodePen](https://codepen.io/konstantindenerz/pen/ExJZPZO)
+- **Animated DNA Background** – Custom CSS animation representing the DNA department DNA Strand 🧬 from Konstantin Denerz @[CodePen](https://codepen.io/konstantindenerz/pen/ExJZPZO)  
+- **Portrain Matting** – [briaai/RMBG-2.0](https://huggingface.co/briaai/RMBG-2.0)
+- **Audio Output** – [coqui-ai/TTS](https://github.com/coqui-ai/TTS)
 
 ## License
 
