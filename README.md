@@ -4,7 +4,7 @@ A fun interactive demo created for colleagues in the Data & Analytics (DNA) depa
 
 ## Demo
 
-🔗 **Live Demo**: [https://yauheniya-adesso.github.io/digital-twin](https://yauheniya-adesso.github.io/digital-twin)
+✨ **Live Demo**: [https://yauheniya-adesso.github.io/digital-twin](https://yauheniya-adesso.github.io/digital-twin)
 
 ## AI Components
 
@@ -75,20 +75,20 @@ The system integrates with LangSmith for complete observability:
 
 ## Technology Stack
 
-**Frontend:**
-- React 18
+**Frontend:**  
+- <img src="https://api.iconify.design/logos:react.svg" alt="React" width="12" height="12" /> React 18
 
 **Backend:**
-- LangGraph (multi-agent orchestration)
-- LangSmith (monitoring)
-- OpenAI GPT-4 (language model)
+- <img src="https://api.iconify.design/simple-icons:langgraph.svg?color=%231C3C3C" alt="LangGraph" width="12" height="12" /> LangGraph (multi-agent orchestration)
+- <img src="https://api.iconify.design/simple-icons:langchain.svg?color=%231C3C3C" alt="LangSmith" width="12" height="12" /> LangSmith (monitoring)
+- <img src="https://api.iconify.design/simple-icons:openai.svg" alt="OpenAI" width="12" height="12" /> OpenAI GPT-4 (language model)
 - ChromaDB (vector store)
 - Coqui TTS (text-to-speech)
-- FastAPI (REST API)
+- <img src="https://api.iconify.design/logos:fastapi-icon.svg" alt="FastAPI" width="12" height="12" /> FastAPI (REST API)
 
 **Deployment:**
-- GitHub Pages (frontend)
-- Hugging Face Spaces (backend)
+- <img src="https://api.iconify.design/mdi:github.svg" alt="GitHub" width="12" height="12" /> GitHub Pages (frontend)
+- <img src="https://api.iconify.design/simple-icons:huggingface.svg?color=%23FFD21E" alt="Hugging Face" width="12" height="12" /> Hugging Face Spaces (backend)
 
 ## Future Enhancements
 
