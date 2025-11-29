@@ -4,7 +4,7 @@ A fun interactive demo created for colleagues in the Data & Analytics (DNA) depa
 
 ## Demo
 <div align="center">
-  <img src="Screenshot.png" alt="Screenshot" />  
+  <img src="./images/Screenshot.png" alt="Screenshot" />  
 </div>
 
 ✨ **Live Demo**: [https://yauheniya-adesso.github.io/digital-twin](https://yauheniya-adesso.github.io/digital-twin)
@@ -15,7 +15,7 @@ This project demonstrates several AI techniques working together:
 
 ### 1. Portrait Matting
 <div align="center">
-  <img src="digital_twin_portrait_matting.png" alt="Portrait Matting Process" />  
+  <img src="./images/digital_twin_portrait_matting.png" alt="Portrait Matting Process" />  
   <br><strong>Figure 1: Background removal using rmbg-2.0 model</strong>
 </div>
 
@@ -23,15 +23,15 @@ This project demonstrates several AI techniques working together:
 
 ### 2. Wireframe Face Animation
 <div align="center">
-  <img src="digital_twin_face_wireframe.png" alt="Face Wireframe Animation" />  
+  <img src="./images/digital_twin_face_wireframe.png" alt="Face Wireframe Animation" />  
   <br><strong>Figure 2: Real-time face tracking using MediaPipe </strong>
 </div>
 
-<br>Implemented face tracking using <img src="opencv.png" alt="OpenCV" height="12" /> **OpenCV** and <img src="MediaPipe.png" alt="MediaPipe" height="12" /> **MediaPipe** to make the digital twin follow lip and face movements when talking, creating a more lifelike interaction. This was achieved by processing a pre-recorded video, which makes the implementation straightforward and efficient. MediaPipe detects facial landmarks (478 key points on the face) in real-time, while OpenCV handles video frame processing and rendering, allowing the wireframe to accurately track facial expressions and mouth movements frame by frame.
+<br>Implemented face tracking using <img src="./images/opencv.png" alt="OpenCV" height="12" /> **OpenCV** and <img src="./images/MediaPipe.png" alt="MediaPipe" height="12" /> **MediaPipe** to make the digital twin follow lip and face movements when talking, creating a more lifelike interaction. This was achieved by processing a pre-recorded video, which makes the implementation straightforward and efficient. MediaPipe detects facial landmarks (478 key points on the face) in real-time, while OpenCV handles video frame processing and rendering, allowing the wireframe to accurately track facial expressions and mouth movements frame by frame.
 
 ### 3. Agentic AI System
 <div align="center">
-  <img src="langgraph_visualization.png" alt="LangGraph Workflow" />  
+  <img src="./images/langgraph_visualization.png" alt="LangGraph Workflow" />  
   <br><strong>Figure 3: Multi-agent RAG system with intelligent routing</strong>
 </div>
 
@@ -45,7 +45,7 @@ See the [backend repository](https://github.com/yauheniya-adesso/digital-twin-ba
 
 ### 4. Text-to-Speech (TTS)
 <div align="center">
-  <img src="digital_twin_audio_output.png" alt="Text-to-Speech" />  
+  <img src="./images/digital_twin_audio_output.png" alt="Text-to-Speech" />  
   <br><strong>Figure 4: Voice synthesis using Coqui TTS</strong>
 </div>
 
@@ -79,13 +79,13 @@ The system integrates with <img src="https://api.iconify.design/twemoji:parrot.s
   <img src="https://api.iconify.design/simple-icons:langgraph.svg?color=%231C3C3C" alt="LangGraph" height="12" /> LangGraph (multi-agent orchestration)  
   <img src="https://api.iconify.design/simple-icons:langchain.svg?color=%231C3C3C" alt="LangSmith" height="12" /> LangSmith (monitoring)  
   <img src="https://api.iconify.design/simple-icons:openai.svg" alt="OpenAI" height="12" /> OpenAI GPT-4 (language model)  
-  <img src="chroma.webp" alt="Chroma" height="12" /> ChromaDB (vector store)  
-  <img src="coqui-ai.svg" alt="Coqui" height="12" /> Coqui TTS (text-to-speech)  
+  <img src="./images/chroma.webp" alt="Chroma" height="12" /> ChromaDB (vector store)  
+  <img src="./images/coqui-ai.svg" alt="Coqui" height="12" /> Coqui TTS (text-to-speech)  
   <img src="https://api.iconify.design/logos:fastapi-icon.svg" alt="FastAPI" height="12" /> FastAPI (REST API)
 
 **Deployment:**  
   <img src="https://api.iconify.design/mdi:github.svg" alt="GitHub" height="12" /> GitHub Pages (frontend)  
-  <img src="hf-icon.svg" alt="Hugging Face" height="12" /> Hugging Face Spaces (backend)
+  <img src="./images/hf-icon.svg" alt="Hugging Face" height="12" /> Hugging Face Spaces (backend)
 
 ## Future Enhancements
 
