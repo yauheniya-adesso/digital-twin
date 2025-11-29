@@ -1,4 +1,4 @@
-# Digital Twin Frontend
+# AI Agent – Digital Twin for Presentations
 
 A fun interactive demo created for colleagues in the Data & Analytics (DNA) department at adesso SE. As new colleagues, we were invited to submit a creative video presentation with a max length of 40 seconds introducing ourselves. Being an AI engineer, I added some AI elements to my video presentation and built this web interface to make it interactive.
 
@@ -24,7 +24,7 @@ This project demonstrates several AI techniques working together:
   <br><strong>Figure 2: Real-time face tracking using MediaPipe </strong>
 </div>
 
-<br>Implemented face tracking using **OpenCV and MediaPipe** to make the digital twin follow lip and face movements when talking, creating a more lifelike interaction. This was achieved by processing a pre-recorded video, which makes the implementation straightforward and efficient. MediaPipe detects facial landmarks (478 key points on the face) in real-time, while OpenCV handles video frame processing and rendering, allowing the wireframe to accurately track facial expressions and mouth movements frame by frame.
+<br>Implemented face tracking using <img src="opencv.png" alt="OpenCV" height="12" /> **OpenCV** and <img src="MediaPipe.png" alt="MediaPipe" height="12" /> **MediaPipe** to make the digital twin follow lip and face movements when talking, creating a more lifelike interaction. This was achieved by processing a pre-recorded video, which makes the implementation straightforward and efficient. MediaPipe detects facial landmarks (478 key points on the face) in real-time, while OpenCV handles video frame processing and rendering, allowing the wireframe to accurately track facial expressions and mouth movements frame by frame.
 
 ### 3. Agentic AI System
 <div align="center">
@@ -32,8 +32,8 @@ This project demonstrates several AI techniques working together:
   <br><strong>Figure 3: Multi-agent RAG system with intelligent routing</strong>
 </div>
 
-<br>Built a multi-agent AI system using **LangGraph** that:
-- Intelligently routes questions to appropriate data sources (LinkedIn, GitHub, Medium)
+<br>Built a multi-agent AI system using <img src="https://api.iconify.design/simple-icons:langgraph.svg?color=%231C3C3C" alt="LangGraph" height="12" /> **LangGraph** that:
+- Intelligently routes questions to appropriate data sources (<img src="https://api.iconify.design/logos:linkedin-icon.svg" alt="LinkedIn" height="12" /> LinkedIn, <img src="https://api.iconify.design/logos:github-icon.svg" alt="GitHub" height="12" /> GitHub, <img src="https://api.iconify.design/logos:medium-icon.svg" alt="Medium" height="12" /> Medium)
 - Uses Retrieval-Augmented Generation (RAG) with vector search for accurate responses
 - Handles multi-language queries with automatic translation to English
 - Optimizes answers for natural text-to-speech output
@@ -53,40 +53,42 @@ See the [backend repository](https://github.com/yauheniya-adesso/digital-twin-ba
 **Interactive Chat Interface** - Ask questions about my professional background and projects  
 **Mobile-Optimized** - Responsive design for QR code access  
 **Smart Suggestions** - Rotating placeholder questions to guide users  
-**Voice Responses** - Text-to-speech output for accessibility (when enabled)
+**Voice Responses** - Text-to-speech output for accessibility (currently only locally)
 
-##  Monitoring
+## Monitoring
 
-The system integrates with LangSmith for complete observability:
-
+The system integrates with <img src="https://api.iconify.design/twemoji:parrot.svg?height=12" />
+ <img src="https://api.iconify.design/mdi:tools.svg" alt="Tools" height="12" /> **LangSmith** for complete observability:
 - Query routing decisions
 - Context retrieval results
 - LLM prompts and responses
 - Token usage and latency
 - Error tracking
 
+**Privacy Note:** This application does not track or store any personally identifiable information (PII) from users. However, LangSmith may collect operational data for monitoring purposes. Please refer to [LangChain's privacy policy](https://www.langchain.com/privacy-policy) for details on their data handling practices.
+
 ## Technology Stack
 
 **Frontend:**  
-- <img src="https://api.iconify.design/logos:react.svg" alt="React" width="12" height="12" /> React 18
+  <img src="https://api.iconify.design/logos:react.svg" alt="React" width="12" height="12" /> React 18
 
-**Backend:**
-- <img src="https://api.iconify.design/simple-icons:langgraph.svg?color=%231C3C3C" alt="LangGraph" width="12" height="12" /> LangGraph (multi-agent orchestration)
-- <img src="https://api.iconify.design/simple-icons:langchain.svg?color=%231C3C3C" alt="LangSmith" width="12" height="12" /> LangSmith (monitoring)
-- <img src="https://api.iconify.design/simple-icons:openai.svg" alt="OpenAI" width="12" height="12" /> OpenAI GPT-4 (language model)
-- ChromaDB (vector store)
-- Coqui TTS (text-to-speech)
-- <img src="https://api.iconify.design/logos:fastapi-icon.svg" alt="FastAPI" width="12" height="12" /> FastAPI (REST API)
+**Backend:**  
+  <img src="https://api.iconify.design/simple-icons:langgraph.svg?color=%231C3C3C" alt="LangGraph" height="12" /> LangGraph (multi-agent orchestration)  
+  <img src="https://api.iconify.design/simple-icons:langchain.svg?color=%231C3C3C" alt="LangSmith" height="12" /> LangSmith (monitoring)  
+  <img src="https://api.iconify.design/simple-icons:openai.svg" alt="OpenAI" height="12" /> OpenAI GPT-4 (language model)  
+  <img src="chroma.webp" alt="Chroma" height="12" /> ChromaDB (vector store)  
+  <img src="coqui-ai.svg" alt="Coqui" height="12" /> Coqui TTS (text-to-speech)  
+  <img src="https://api.iconify.design/logos:fastapi-icon.svg" alt="FastAPI" height="12" /> FastAPI (REST API)
 
-**Deployment:**
-- <img src="https://api.iconify.design/mdi:github.svg" alt="GitHub" width="12" height="12" /> GitHub Pages (frontend)
-- <img src="hf-icon.svg" alt="Hugging Face" width="12" height="12" /> Hugging Face Spaces (backend)
+**Deployment:**  
+  <img src="https://api.iconify.design/mdi:github.svg" alt="GitHub" height="12" /> GitHub Pages (frontend)  
+  <img src="hf-icon.svg" alt="Hugging Face" height="12" /> Hugging Face Spaces (backend)
 
 ## Future Enhancements
 
 **Advanced Voice Cloning & Facial Animation:**
 - Record a video sample with voice to capture authentic wireframe movements and facial expressions
-- Clone my voice using state-of-the-art voice synthesis models for a personalized speech pattern
+- Clone own voice using state-of-the-art voice synthesis models for a personalized speech pattern
 - Synchronize the digital twin's lip movements and facial animations with the cloned voice in real-time
 - Replicate my typical speaking mannerisms and facial expressions for a more natural interaction
 

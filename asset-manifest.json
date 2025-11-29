@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/digital-twin/static/css/main.4152c3d3.css",
-    "main.js": "/digital-twin/static/js/main.b489caac.js",
+    "main.js": "/digital-twin/static/js/main.d352e996.js",
     "static/js/453.8cdf31b6.chunk.js": "/digital-twin/static/js/453.8cdf31b6.chunk.js",
     "index.html": "/digital-twin/index.html",
     "main.4152c3d3.css.map": "/digital-twin/static/css/main.4152c3d3.css.map",
-    "main.b489caac.js.map": "/digital-twin/static/js/main.b489caac.js.map",
+    "main.d352e996.js.map": "/digital-twin/static/js/main.d352e996.js.map",
     "453.8cdf31b6.chunk.js.map": "/digital-twin/static/js/453.8cdf31b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4152c3d3.css",
-    "static/js/main.b489caac.js"
+    "static/js/main.d352e996.js"
   ]
 }
