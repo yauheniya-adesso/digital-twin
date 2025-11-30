@@ -41,7 +41,7 @@ This project demonstrates several AI techniques working together:
 - Handles multi-language queries with automatic translation to English
 - Optimizes answers for natural text-to-speech output
 
-See the [backend repository](https://github.com/yauheniya-adesso/digital-twin-backend) for technical details.
+See the [backend repository](https://huggingface.co/spaces/yauheniya-adesso/digital-twin-backend/tree/main) for technical details.
 
 ### 4. Text-to-Speech (TTS)
 <div align="center">
@@ -61,7 +61,7 @@ See the [backend repository](https://github.com/yauheniya-adesso/digital-twin-ba
 ## Monitoring
 
 The system integrates with <img src="https://api.iconify.design/twemoji:parrot.svg?height=12" />
- <img src="https://api.iconify.design/mdi:tools.svg" alt="Tools" height="12" /> **LangSmith** for complete observability:
+<img src="https://api.iconify.design/mdi:tools.svg" alt="Tools" height="12" /> **LangSmith** for complete observability:
 - Query routing decisions
 - Context retrieval results
 - LLM prompts and responses
