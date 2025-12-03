@@ -1,5 +1,4 @@
 # AI Agent – Digital Twin for Presentations
-
 A fun interactive demo created for colleagues in the Data & Analytics (DNA) department at adesso SE. As new colleagues, we were invited to submit a creative video presentation with a max length of 40 seconds introducing ourselves. Being an AI engineer, I added some AI elements to my video presentation and built this web interface to make it interactive.
 
 ## Demo
@@ -10,7 +9,6 @@ A fun interactive demo created for colleagues in the Data & Analytics (DNA) depa
 ✨ **Live Demo**: [https://yauheniya-adesso.github.io/digital-twin](https://yauheniya-adesso.github.io/digital-twin)
 
 ## AI Components
-
 This project demonstrates several AI techniques working together:
 
 ### 1. Portrait Matting
@@ -52,14 +50,12 @@ See the [backend repository](https://huggingface.co/spaces/yauheniya-adesso/digi
 <br>Integrated a pretrained **Coqui TTS model** from Hugging Face to give voice to the digital twin, enabling natural spoken responses. The digital twin was originally designed to provide audio output, and the local model successfully generates voice responses. However, due to deployment constraints on platforms like Render and Hugging Face Spaces, the current live demo returns text-only responses. The full audio functionality remains available when running the backend locally.
 
 ## Features
-
 **Interactive Chat Interface** - Ask questions about my professional background and projects  
 **Mobile-Optimized** - Responsive design for QR code access  
 **Smart Suggestions** - Rotating placeholder questions to guide users  
 **Voice Responses** - Text-to-speech output for accessibility (currently only locally)
 
 ## Monitoring
-
 The system integrates with <img src="https://api.iconify.design/twemoji:parrot.svg?height=12" />
 <img src="https://api.iconify.design/mdi:tools.svg" alt="Tools" height="12" /> **LangSmith** for complete observability:
 - Query routing decisions
@@ -71,7 +67,6 @@ The system integrates with <img src="https://api.iconify.design/twemoji:parrot.s
 **Privacy Note:** This application does not track or store any personally identifiable information (PII) from users. However, LangSmith may collect operational data for monitoring purposes. Please refer to [LangChain's privacy policy](https://www.langchain.com/privacy-policy) for details on their data handling practices.
 
 ## Technology Stack
-
 **Frontend:**  
   <img src="https://api.iconify.design/logos:react.svg" alt="React" width="12" height="12" /> React 18
 
@@ -88,7 +83,6 @@ The system integrates with <img src="https://api.iconify.design/twemoji:parrot.s
   <img src="./images/hf-icon.svg" alt="Hugging Face" height="12" /> Hugging Face Spaces (backend)
 
 ## Future Enhancements
-
 **Advanced Voice Cloning & Facial Animation:**
 - Record a video sample with voice to capture authentic wireframe movements and facial expressions
 - Clone own voice using state-of-the-art voice synthesis models for a personalized speech pattern
@@ -101,11 +95,10 @@ The system integrates with <img src="https://api.iconify.design/twemoji:parrot.s
 - Implement GPU acceleration for faster speech synthesis
 
 ## Acknowledgements
-
-- **Animated DNA Background** – Custom CSS animation representing the DNA department DNA Strand 🧬 from Konstantin Denerz @[CodePen](https://codepen.io/konstantindenerz/pen/ExJZPZO)  
-- **Portrain Matting** – [briaai/RMBG-2.0](https://huggingface.co/briaai/RMBG-2.0)
+- **Animated DNA Background** – DNA Strand 🧬 from Konstantin Denerz @[CodePen](https://codepen.io/konstantindenerz/pen/ExJZPZO)  
+- **Face Wireframe** – [MediaPipe Face Mesh](https://developers.google.com/mediapipe/solutions/vision/face_landmarker)
+- **Portrait Matting** – [briaai/RMBG-2.0](https://huggingface.co/briaai/RMBG-2.0)
 - **Audio Output** – [coqui-ai/TTS](https://github.com/coqui-ai/TTS)
 
 ## License
-
 MIT
