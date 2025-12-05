@@ -34,7 +34,7 @@ This project demonstrates several AI techniques working together:
 </div>
 
 <br>Built a multi-agent AI system using <img src="https://api.iconify.design/simple-icons:langgraph.svg?color=%231C3C3C" alt="LangGraph" height="12" /> **LangGraph** that:
-- Intelligently routes questions to appropriate data sources (<img src="https://api.iconify.design/logos:linkedin-icon.svg" alt="LinkedIn" height="12" /> LinkedIn, <img src="https://api.iconify.design/logos:github-icon.svg" alt="GitHub" height="12" /> GitHub, <img src="https://api.iconify.design/logos:medium-icon.svg" alt="Medium" height="12" /> Medium)
+- Intelligently routes questions to appropriate data sources (<img src="https://api.iconify.design/logos:linkedin-icon.svg" alt="LinkedIn" height="12" /> [LinkedIn](https://de.linkedin.com/in/yauheniya-varabyova), <img src="https://api.iconify.design/logos:github-icon.svg" alt="GitHub" height="12" /> GitHub ([yauheniya-adesso](https://github.com/yauheniya-adesso) & [yauheniya-ai](https://github.com/yauheniya-ai)), <img src="https://api.iconify.design/logos:medium-icon.svg" alt="Medium" height="12" /> [Medium](https://medium.com/@yauheniya.ai))
 - Uses Retrieval-Augmented Generation (RAG) with vector search for accurate responses
 - Handles multi-language queries with automatic translation to English
 - Optimizes answers for natural text-to-speech output
